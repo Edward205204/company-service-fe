@@ -1,8 +1,9 @@
 import useCustomRouter from './useCustomRouter';
 
 function App() {
-  const elements = useCustomRouter();
-  return <>{elements}</>;
+  const element = useCustomRouter();
+  console.log(element);
+  return <>{element}</>;
 }
 
 export default App;
