@@ -2,10 +2,10 @@ import { useRoutes } from 'react-router';
 import Dashboard from './pages/Dashboard';
 import MainLayout from './layout/MainLayout';
 import Sidebar from './components/Sidebar';
-import TotalIncome from './pages/TotalIncome';
 import DayOff from './pages/DayOff';
 import AverageBenefits from './pages/AverageBenefits';
 import Notify from './pages/Notify';
+import Payroll from './pages/Payroll';
 
 export default function useCustomRouter() {
   const elements = useRoutes([
@@ -19,10 +19,10 @@ export default function useCustomRouter() {
       )
     },
     {
-      path: '/tong-thu',
+      path: '/payroll',
       element: (
         <MainLayout sidebar={<Sidebar />}>
-          <TotalIncome />
+          <Payroll />
         </MainLayout>
       )
     },

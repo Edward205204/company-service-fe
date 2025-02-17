@@ -14,7 +14,7 @@ export default function Sidebar() {
           DashBoard
         </NavLink>
         <NavLink
-          to={'/tong-thu'}
+          to={'/payroll'}
           className={({ isActive }) =>
             `${isActive ? 'bg-blue-500 text-white ' : 'hover:bg-blue-500 hover:text-white'} hoverEffect text-center mb-4 p-4`
           }
